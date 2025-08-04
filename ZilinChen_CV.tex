@@ -9,9 +9,9 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Zilin Chen} % Your name 
-\address{Room 235, Student Department 28\#, Tsinghua University, Beijing, 100084, P. R. China} % Your address 
+% \address{Room 235, Student Department 28\#, Tsinghua University, Beijing, 100084, P. R. China} % Your address 
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
-\address{(+86)189-9550-1708 \\ chenzili22@mails.tsinghua.edu.cn} % Your phone number and email
+\address{(+86)189--9550--1708 \\ chenzili22@mails.tsinghua.edu.cn} % Your phone number and email
 
 \definecolor{TsinghuaPurple}{cmyk}{0.58,0.90,0,0}
 \renewenvironment{rSection}[1]{
@@ -37,23 +37,24 @@
 
 \begin{rSection}{Education}
 
-{\bf School of Mechanical Engineering, Tsinghua University, Beijing, China } \hfill {Aug 2022 - present}
+{\bf School of Mechanical Engineering, Tsinghua University, Beijing, China } \hfill {Aug 2022--present}
 \\ 
 B.E. in Mechanical Engineering
 \\
-Current overall GPA until junior: 3.59/4.0 (Top 35\%)
+Current overall GPA\@: 3.59/4.0 (Top 35\%)
+\\
+English Proficiency: IELTS Overall 7.5 (Reading 8.5, Listening 8.5, Speaking 6.0, Writing 6.5)
 \\
 Core Courses: 
 \begin{itemize}[itemsep = -0.5em, topsep = -0.5em]
     \item Mechatronic System Design Practice (A)
     \item Mechanical Engineering Mechanics (1) (A+)
     \item Robot Cognition and Practice (A-)
-    \item Measurement and Instrumentation (A-)
 \end{itemize}
 
 \vspace{11pt}
 
-{\bf Department of Mechanical and Industrial Engineering, University of Toronto} \hfill {Sep 2024 - Dec 2024}
+{\bf Department of Mechanical and Industrial Engineering, University of Toronto} \hfill {Sep 2024--Dec 2024}
 \\ 
 Exchange student in Mechanical Engineering
 \\
@@ -71,31 +72,38 @@ Courses:
 %-------------------------------------------------------------------------------
 %	PROJECTS
 \begin{rSection}{PROJECTS}
+    % 讲technical point，要有具体给组里带来的好处
+    % 准确度提高多少，留下代码，创新点-准备paper，参加竞赛
+    % 
 
-    \begin{rSubsection}{Collaborative Robot Design - Research Assistant} {Feb 2024 - Dec 2024}{Advisor: Dr. Ze Wang, Assistant Dean, School of Mechanical Engineering, Tsinghua University}{}
-    \item Conducted an in-depth literature review and compiled a report on motion trajectory planning strategies for dual-arm collaborative robots
-    \item Proposed and implemented methods to enhance the end-effector stability under dynamic and cooperative motions
-    \item \textbf{Analyzed and simulated the workspace and joint constraints} to avoid internal collisions between the two robotic arms
-    \item Collaborated with a team of four to conceptualize and evaluate multiple robot configurations to improve system stiffness and operational reliability
-    \end{rSubsection}  
-    
-    \begin{rSubsection}{Intelligent Vehicle Design - Team Leader}{July 2024}{}{}
+    \begin{rSubsection}{Artificial Muscle-Actuated UAV---Research Assistant}{Feb 2025--Present}{Advisor: Dr.Huichan Zhao, Associate Professor, School of Mechanical Engineering, Tsinghua University}{}
+        \item Designed and built a cross-platform simulation framework for a new class of UAV using artificial muscles; written entirely in C++ with Python-based visualization
+        \item Created a lightweight \textbf{flight control system} for a 23g muscle-actuated drone on my own, enabling stable flight and responsive control
+        \item Leave the \textbf{framework code} for building the simulator for the laboratory
+    \end{rSubsection}
+
+    \begin{rSubsection}{UTAT Autonomous Drone Racing Team---Research Assistant}{Sep 2024--Jan 2025}{Advisor: Dr.Hugh H.T. Liu, Director, Centre for Aerial Robotics Research and Education, University of Toronto}{}    
+        \item Assisted in experimental testing of ESC switching frequency and motor response curve to improve simulation accuracy, with the error \textbf{within 5\%} after interpolation
+        \item \textbf{Developed a custom racing drone simulator}, focusing on flight controller logic, by adapting open-source components (read all the code of betaflight) for compatibility with onboard computing
+        \item Use CasADi to develop and optimize yaw axis trajectories to solve the \textbf{time-optimal path}, thereby improving gate visibility and navigation accuracy, and increasing the speed of the drone by \textbf{more than 50\%}
+    \end{rSubsection} 
+
+    \begin{rSubsection}{Intelligent Vehicle Design---Team Leader}{June 2024--August 2024}{}{}
     \item Led a team of three to design and construct an autonomous, car-shaped vehicle capable of object transport over predefined routes
     \item Integrated multiple advanced features including \textbf{line-following, real-time obstacle avoidance, target detection}, and Bluetooth-based remote control
     \item Implemented PID control algorithms to finely tune motor parameters for precise control of velocity and turning angle
     \item Utilized STM32 microcontroller for embedded control, and OpenMV for \textbf{real-time computer vision}, image recognition, and dynamic path planning
+    % 提升了多少（什么效果）
     \end{rSubsection}
+
+    \newpage
     
-    \begin{rSubsection}{UTAT Autonomous Drone Racing Team - Research Assistant}{Sep 2024 - Jan 2025}{Advisor: Dr. Hugh H.T. Liu, Director, Centre for Aerial Robotics Research and Education, University of Toronto}{}    
-    \item Assisted in experimental testing of ESC switching frequencies and motor response curves to support simulation accuracy
-    \item \textbf{Developed a custom racing drone simulator}, focusing on flight controller logic, by adapting open-source components for compatibility with onboard computing
-    \item \textbf{Formulated and optimized yaw-axis trajectories} under race constraints using CasADi to solve for time-optimal paths, enhancing drone gate visibility and navigation accuracy
+    \begin{rSubsection}{Collaborative Robot Design---Research Assistant} {Feb 2024--Dec 2024}{Advisor: Dr.Ze Wang, Assistant Dean, School of Mechanical Engineering, Tsinghua University}{}
+        \item Conducted an in-depth literature review and compiled a report on motion trajectory planning strategies for dual-arm collaborative robots
+        \item Proposed and implemented methods to enhance the end-effector stability under dynamic and cooperative motions
+        \item \textbf{Analyzed and simulated the workspace and joint constraints} to avoid internal collisions between the two robotic arms
+        \item Collaborated with a team of four to conceptualize and evaluate multiple robot configurations to improve system stiffness and operational reliability
     \end{rSubsection} 
-    
-    \begin{rSubsection}{Artificial Muscle-Actuated UAV - Research Assistant}{Feb 2025 - Present}{Advisor: Dr. Huichan Zhao, Associate Professor, School of Mechanical Engineering, Tsinghua University}{}
-    \item Designed and built a cross-platform simulation framework for a new class of UAV using artificial muscles; written entirely in C++ with Python-based visualization
-    \item Created a lightweight \textbf{flight control system} for a 23g muscle-actuated drone, enabling stable flight and responsive control
-    \end{rSubsection}
     
     \end{rSection}
     
@@ -104,16 +112,16 @@ Courses:
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Internship Experience}
 
-    \begin{rSubsection}{Huahaiqingke CMP Edge Polishing - Mechanical Engineering Intern}{Jun 2025 - Jul 2025}{}{}
-    \item Built a comprehensive \textbf{kinematic simulation model} to study the chemical mechanical polishing (CMP) edge-finishing process
-    \item Optimized the leveling workflow through mechanical adjustments, significantly increasing throughput and stability
+    \begin{rSubsection}{Chemical Mechanical Polishing Edge Polishing Simulation}{Jun 2025--Jul 2025}{Huahaiqingke Corporation, Mechanical Engineer}{}
+    \item Built a comprehensive \textbf{kinematic simulation model} to study the CMP edge-finishing process
+    \item Optimized the leveling process through mechanical adjustments, significantly improving the leveling speed and stability (the leveling process took about \textbf{60 minutes before} optimization and about \textbf{10 minutes after} optimization)
     \item Analyzed the impact of key process parameters on surface quality and edge integrity, contributing to refinement of operation protocols
     \end{rSubsection}
     
-    \begin{rSubsection}{Xiaomi Corporation - Mechanical Engineering Intern}{Jul 2025 - Present}{}{}
+    \begin{rSubsection}{Xiaomi Corporation---Mechanical Engineering Intern}{Jul 2025--Present}{}{}
     \item Participated in the assembly and debugging of humanoid robotic arms deployed in automotive production lines
     \item Executed \textbf{Hardware-in-the-Loop (HIL)} simulations to validate robotic control systems in real-time environments
-    \item Developed and tested control algorithms for high-degree-of-freedom arm motion planning and execution
+    \item Developed and tested control algorithms for 7--DOF arm motion planning and execution, helping the developing team to finish the \textbf{\textit{ISO 9283:1998} test}
     \end{rSubsection}
     
     \end{rSection}    
@@ -143,17 +151,17 @@ Courses:
  %-----------------------------------------------------------------------------
  \begin{rSection}{LEADERSHIP AND ACTIVITIES}
 
-    \begin{rSubsection}{Tsinghua University Symphony Orchestra}{Aug 2023 - July 2024}{Vice President, CCYL Tsinghua University Committee}{}              
+    \begin{rSubsection}{Tsinghua University Symphony Orchestra}{Aug 2023---July 2024}{Vice President, CCYL Tsinghua University Committee}{}              
     \item Coordinated logistics and scheduling for the orchestra's performance in the $7^{th}$ National College Student Art Exhibition, where the group secured the \textbf{top national award}
     \item Oversaw rehearsal planning and internal affairs; organized multiple high-attendance concerts involving over 30 performers
     \item Served as both the \textbf{principal bassist and pianist}, contributing musically and administratively to the orchestra’s success
     \end{rSubsection}  
     
-    \begin{rSubsection}{Student Social Practice Team} {Jan 2024 - Mar 2024}{Project Leader, CCYL Mechanical Engineering Committee}{} 
-    \item Organized and led a 16-member interdisciplinary team, including members from HUST and TJU, for a national-level social practice project
-    \item Visited leading mechanical enterprises to conduct field research and held dialogues with frontline engineers about real-world applications and engineering challenges
-    \item Honored with the Golden Award for Social Practice within the Department, and received the individual Best Team Leader award for outstanding leadership and organization
-    \end{rSubsection}
+    % \begin{rSubsection}{Student Social Practice Team} {Jan 2024--Mar 2024}{Project Leader, CCYL Mechanical Engineering Committee}{} 
+    % \item Organized and led a 16-member interdisciplinary team, including members from HUST and TJU, for a national-level social practice project
+    % \item Visited leading mechanical enterprises to conduct field research and held dialogues with frontline engineers about real-world applications and engineering challenges
+    % \item Honored with the Golden Award for Social Practice within the Department, and received the individual Best Team Leader award for outstanding leadership and organization
+    % \end{rSubsection}
     
     \end{rSection}
     
@@ -186,11 +194,11 @@ Courses:
 \begin{rSection}{SKILLS AND INTERESTS}
 
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
-    English Proficiency & IELTS Overall: 7.5 (Reading 8.5, Listening 8.5, Speaking 6.0, Writing 6.5)\\
+    % English Proficiency & IELTS Overall: 7.5 (Reading 8.5, Listening 8.5, Speaking 6.0, Writing 6.5)\\
     Research Interests & Autonomous control systems, optimal trajectory planning, robotic dynamics\\    
     Practical Skills & Skilled in metalworking, machining, conducting industrial robot experiments\\
-    Programming Languages & Proficient in C, C++, Python, MATLAB; familiar with Java\\
-    Software Proficiency & Microsoft Office Suite, Adobe Photoshop, AutoCAD, SolidWorks, Multisim\\
+    Programming Languages & Proficient in C, C++, Python, MATLAB\@; familiar with Java\\
+    Software Proficiency &AutoCAD, SolidWorks, Multisim, Adobe Photoshop\\
     \end{tabular}   
     
 \end{rSection}
@@ -202,8 +210,8 @@ Courses:
 
 
 \begin{rSection}{Selected awards} \itemsep -2pt
-{Literary and Art Scholarship}\hfill {\em 2023} \\
-{Literary and Art Scholarship}\hfill {\em 2024} \\
+{Literary and Art Scholarship}\hfill {\em 2023\;\&\;2024} \\
+% {Literary and Art Scholarship}\hfill {\em 2024} \\
 {Best social practice team Leader} \hfill {\em Spring 2024}
 \end{rSection}
 
